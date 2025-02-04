@@ -1,0 +1,252 @@
+
+/*   Мобильная версия главной страницы*/
+@media (max-width: 767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .header {
+        padding-top: 32px;
+        
+        border-bottom: none;
+        &__input {
+            display: none;
+        }
+        &__logo {
+            width: 99px;
+            height: 22px;
+        }
+        &__menu-mobile {
+            display: block;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+    }
+    
+
+    .menu {
+        display: none;
+    }
+
+
+    .top {
+        &__title {
+            font-size: 48px;
+            line-height: 59px;
+            text-align: center;
+            margin-top: 0;
+        }
+        &__text {
+            font-size: 16px;
+            text-align: center;
+        }
+        &__link {
+            font-size: 14px;
+            text-align: center;
+            display: block;
+        }
+    }
+
+    .for-box {
+        padding-top: 32px;
+
+        &__heading {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .for {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 16px;
+
+        &__item {
+            grid-column: 1 / -1;
+            height: 375px;
+            font-size: 28px;
+            line-height: 34px;
+
+            &_big {
+                height: 244px;
+            }
+        }   
+    }
+
+    .product-box {
+        padding-top: 32px;
+        &__offer {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .product-content {
+        row-gap: 32px;
+    }
+
+    .product {
+        width: 343px;
+        position:relative;
+        &__name {
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 9px;
+            margin-bottom: 10px;
+        }
+        &__desc {
+            margin-bottom: 8px;
+        }
+        &__price {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+    .product:hover .icon {
+        padding-left: 270px;
+    }
+
+    .link-box {
+        padding-bottom: 32px;
+        padding-top: 4px;
+    }
+
+    .footer__content {
+        justify-content: center;
+        column-gap: 90px;
+    }
+    .footer__info {
+        padding-bottom: 71px;
+    }
+    
+}
+
+/*   Мобильная версия каталога*/
+@media (max-width: 767px) {
+    .top-catalog__title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        margin-top: 82px;
+        margin-bottom: 170px;
+    }
+
+    .breadcrumbs-wrapper {
+        padding-top: 32px;
+    }
+    .breadcrumbs {
+        margin-bottom: 14px;
+    }
+
+    .filter-box {
+        flex-direction: row;
+        padding-left: 0;
+        padding-bottom: 32px;
+        
+        &__button-wrapper {
+            justify-content: flex-start;
+            order: 2;
+        }
+    }
+   
+
+    .filtering-form {
+        right: -80px;
+        width: auto;
+        &__content-wrapper {
+            flex-wrap: nowrap;
+            max-height: 910px;
+        }
+    }
+
+    .product-content-catalog {
+        row-gap: 33px;
+    }
+    
+    .options {
+        display: flex;
+        order: 1;
+    }
+    
+    .product__name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .product__price {
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 710px) {
+    .filter-box {
+    flex-direction: column;
+    }
+    .breadcrumbs-wrapper {
+        flex-direction: column;
+    }
+}
+@media (min-width: 710px) and (max-width: 767px) {
+    .filtering-form {
+        right: 0px;
+        width: 445px;
+        &__content-wrapper {
+            max-height: 548px;
+            flex-wrap: wrap;
+        }
+    }
+}
+
+/*   Мобильная версия корзины*/
+@media (max-width: 767px) {
+ 
+    .top-cart__title {
+        font-size: 48px;
+        line-height: 59px;
+        text-align: center;
+        margin-top: 82px;
+    }
+
+    .cart {
+        grid-template-columns: repeat(4, 1fr);
+        &__name-box {
+            display: none;
+        }
+        &__img {
+            display: none;
+        }
+        &__info-subtitle {
+            font-size: 18px;
+            line-height: 22px;
+        }
+        &__info-desc {
+            width: 253px;
+        }
+        &__info-price {
+            font-size: 12px;
+            line-height: 15px;
+            text-align: left;
+        }
+        &__button{
+            gap: 14px;
+        }
+        &__button-btn {
+            font-size: 12px;
+            line-height: 15px;
+        }
+       
+        &__form {
+            grid-column: span 8;
+        }
+        &__input {
+            padding-left: 11px;
+            padding-right: 12px;
+        }
+        &__form-button {
+            margin-left: 0px;
+        }
+        
+    }
+
+    }

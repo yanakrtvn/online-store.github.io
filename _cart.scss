@@ -1,0 +1,244 @@
+
+.top-cart {
+    height: 400px;
+    background-image: url(img/top-cart.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &__title {
+        color: rgb(255, 255, 255);
+        font-size: 64px;
+        font-weight: 600;
+        line-height: 70px;
+        margin-top: 127px;
+    }
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__content {
+        grid-column: span 8;
+    }
+
+    &__name-box {
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 14px;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 0.5px solid #cacdd8;
+        padding-top: 25px;
+        padding-bottom: 32px;
+    }
+
+    &__left {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 14px;
+        width: 276px;
+    }
+
+    &__info-subtitle {
+        color: $color-text-2;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    &__info-desc {
+        color: #888888;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__info-price {
+        color: $color-text-2;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    &__link-box {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__link {
+        color: $color-text-2;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration-line: underline;
+        line-height: 210%;
+    }
+    &__link:hover {
+        color: #888888;
+        text-decoration-line: none;
+    }
+
+    &__number {
+        border-radius: 6px;
+        background: #f7f6f6;
+        width: 71px;
+        height: 51px;
+        border: $color-text;
+        color: $color-text-2;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        text-align: center;
+    }
+        
+    input[type="number"]::-webkit-inner-spin-button, 
+    input[type="number"]::-webkit-outer-spin-button { 
+        -webkit-appearance: none; 
+        margin: 0;}
+    input[type="number"] {
+         -moz-appearance: textfield;
+    }
+
+    &__button {
+        display: flex;
+        gap: 7px;
+        justify-content: flex-start
+    }
+
+
+    &__button-btn {
+        box-sizing: border-box;
+        border: 1px solid $color-text-2;
+        border-radius: 50px;
+        width: 200px;
+        height: 37px;
+        color: $color-text-2;
+        background: $color-text;
+        font: inherit;
+        text-align: center;
+        text-decoration: none;
+    }
+    &__button-btn {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__button-btn:hover {
+        background: $color-text-2;
+        color: $color-text;
+    }
+
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        height: 556px;
+        border-radius: 20px;
+        background: #f7f6f6;
+        grid-column: span 4;
+    }
+    &__form-subtitle {
+        color: $color-text-2;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        padding-top: 42px;
+        padding-bottom: 32px;
+    }
+    &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        padding-left: 27px;
+    }
+
+    &__input-text {
+        border: none;
+        background: #f7f6f6;
+        border-bottom: 1px solid rgb(202, 205, 216) ;
+        width: 288px;
+        font: inherit;
+        color: $color-text-2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+    }
+
+    &__form-price {
+        padding-top: 64px;
+        padding-bottom: 18px;
+    }
+
+    &__text {
+        color: $color-text-2;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+    &__price {
+        color: $color-text-2;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29px;
+    }
+
+    &-cont {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__form-button {
+        box-sizing: border-box;
+        border: 1px solid #040404;
+        border-radius: 20px;
+        width: 290px;
+        height: 41px;
+        font: inherit;
+        color: $color-text-2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &__form-button:hover {
+        background: $color-text-2;
+        color: $color-text;
+    }
+
+}
+
+.link-box-corzina {
+    margin-top: 32px;
+    margin-bottom: 65px;
+
+    &__text {
+        color: $color-text-2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-decoration-line: underline;
+        margin-top: 32px;
+    
+        &:hover {
+            color: #888888;
+            text-decoration-line: none;
+        }
+    }
+}
